@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D751236844E47A68E33326C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40183B8FF7E546919D1077C8 /* libPods.a */; };
+		DFC2412218AC5A0100E1A4F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412118AC5A0100E1A4F8 /* MainViewController.m */; };
 		DFCBF83318AC5885007201E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83218AC5885007201E4 /* Foundation.framework */; };
 		DFCBF83518AC5885007201E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83418AC5885007201E4 /* CoreGraphics.framework */; };
 		DFCBF83718AC5885007201E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83618AC5885007201E4 /* UIKit.framework */; };
@@ -15,7 +17,6 @@
 		DFCBF84318AC5885007201E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCBF84218AC5885007201E4 /* AppDelegate.m */; };
 		DFCBF84618AC5885007201E4 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */; };
 		DFCBF84918AC5885007201E4 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */; };
-		DFCBF84C18AC5885007201E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCBF84B18AC5885007201E4 /* ViewController.m */; };
 		DFCBF84E18AC5885007201E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84D18AC5885007201E4 /* Images.xcassets */; };
 		DFCBF85518AC5885007201E4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF85418AC5885007201E4 /* XCTest.framework */; };
 		DFCBF85618AC5885007201E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83218AC5885007201E4 /* Foundation.framework */; };
@@ -35,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40183B8FF7E546919D1077C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59C6607BD5CF4EBB9C86BB8E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DFC2412018AC5A0100E1A4F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DFC2412118AC5A0100E1A4F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DFCBF82F18AC5885007201E4 /* FlickrBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCBF83218AC5885007201E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DFCBF83418AC5885007201E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,8 +52,6 @@
 		DFCBF84218AC5885007201E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DFCBF84518AC5885007201E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		DFCBF84818AC5885007201E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		DFCBF84A18AC5885007201E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DFCBF84B18AC5885007201E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DFCBF84D18AC5885007201E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DFCBF85318AC5885007201E4 /* FlickrBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCBF85418AC5885007201E4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,6 +68,7 @@
 				DFCBF83518AC5885007201E4 /* CoreGraphics.framework in Frameworks */,
 				DFCBF83718AC5885007201E4 /* UIKit.framework in Frameworks */,
 				DFCBF83318AC5885007201E4 /* Foundation.framework in Frameworks */,
+				0D751236844E47A68E33326C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +92,7 @@
 				DFCBF85A18AC5885007201E4 /* FlickrBookTests */,
 				DFCBF83118AC5885007201E4 /* Frameworks */,
 				DFCBF83018AC5885007201E4 /* Products */,
+				59C6607BD5CF4EBB9C86BB8E /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +112,7 @@
 				DFCBF83418AC5885007201E4 /* CoreGraphics.framework */,
 				DFCBF83618AC5885007201E4 /* UIKit.framework */,
 				DFCBF85418AC5885007201E4 /* XCTest.framework */,
+				40183B8FF7E546919D1077C8 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,12 +120,10 @@
 		DFCBF83818AC5885007201E4 /* FlickrBook */ = {
 			isa = PBXGroup;
 			children = (
-				DFCBF84118AC5885007201E4 /* AppDelegate.h */,
-				DFCBF84218AC5885007201E4 /* AppDelegate.m */,
 				DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */,
 				DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */,
-				DFCBF84A18AC5885007201E4 /* ViewController.h */,
-				DFCBF84B18AC5885007201E4 /* ViewController.m */,
+				DFC2412018AC5A0100E1A4F8 /* MainViewController.h */,
+				DFC2412118AC5A0100E1A4F8 /* MainViewController.m */,
 				DFCBF84D18AC5885007201E4 /* Images.xcassets */,
 				DFCBF83918AC5885007201E4 /* Supporting Files */,
 			);
@@ -129,6 +133,8 @@
 		DFCBF83918AC5885007201E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFCBF84118AC5885007201E4 /* AppDelegate.h */,
+				DFCBF84218AC5885007201E4 /* AppDelegate.m */,
 				DFCBF83A18AC5885007201E4 /* FlickrBook-Info.plist */,
 				DFCBF83B18AC5885007201E4 /* InfoPlist.strings */,
 				DFCBF83E18AC5885007201E4 /* main.m */,
@@ -162,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFCBF86418AC5885007201E4 /* Build configuration list for PBXNativeTarget "FlickrBook" */;
 			buildPhases = (
+				4E155319E74C439F8A9DA550 /* Check Pods Manifest.lock */,
 				DFCBF82B18AC5885007201E4 /* Sources */,
 				DFCBF82C18AC5885007201E4 /* Frameworks */,
 				DFCBF82D18AC5885007201E4 /* Resources */,
+				33D3F89DE4204869A1408D66 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,13 +256,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		33D3F89DE4204869A1408D66 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E155319E74C439F8A9DA550 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DFCBF82B18AC5885007201E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFCBF84C18AC5885007201E4 /* ViewController.m in Sources */,
 				DFCBF84318AC5885007201E4 /* AppDelegate.m in Sources */,
+				DFC2412218AC5A0100E1A4F8 /* MainViewController.m in Sources */,
 				DFCBF83F18AC5885007201E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +430,7 @@
 		};
 		DFCBF86518AC5885007201E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C6607BD5CF4EBB9C86BB8E /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -402,6 +444,7 @@
 		};
 		DFCBF86618AC5885007201E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C6607BD5CF4EBB9C86BB8E /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -474,6 +517,7 @@
 				DFCBF86618AC5885007201E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFCBF86718AC5885007201E4 /* Build configuration list for PBXNativeTarget "FlickrBookTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +526,7 @@
 				DFCBF86918AC5885007201E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
