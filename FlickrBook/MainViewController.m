@@ -14,13 +14,10 @@
 
 @implementation MainViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+- (id)init{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
+    MainViewController *_mvc = [sb instantiateViewControllerWithIdentifier:@"MainViewController"];
+    return _mvc;
 }
 
 - (void)viewDidLoad

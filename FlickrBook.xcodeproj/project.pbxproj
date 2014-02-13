@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D751236844E47A68E33326C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40183B8FF7E546919D1077C8 /* libPods.a */; };
 		DFC2412218AC5A0100E1A4F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412118AC5A0100E1A4F8 /* MainViewController.m */; };
+		DFC2412418AC5AED00E1A4F8 /* FlickrBookSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */; };
 		DFCBF83318AC5885007201E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83218AC5885007201E4 /* Foundation.framework */; };
 		DFCBF83518AC5885007201E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83418AC5885007201E4 /* CoreGraphics.framework */; };
 		DFCBF83718AC5885007201E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83618AC5885007201E4 /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		DFCBF85618AC5885007201E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83218AC5885007201E4 /* Foundation.framework */; };
 		DFCBF85718AC5885007201E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83618AC5885007201E4 /* UIKit.framework */; };
 		DFCBF85F18AC5885007201E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF85D18AC5885007201E4 /* InfoPlist.strings */; };
-		DFCBF86118AC5885007201E4 /* FlickrBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCBF86018AC5885007201E4 /* FlickrBookTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,11 @@
 		59C6607BD5CF4EBB9C86BB8E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		DFC2412018AC5A0100E1A4F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DFC2412118AC5A0100E1A4F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrBookSpec.m; sourceTree = "<group>"; };
+		DFC2412518AC5B3B00E1A4F8 /* libPods-Expecta.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-Expecta.a"; path = "Pods/build/Debug-iphoneos/libPods-Expecta.a"; sourceTree = "<group>"; };
+		DFC2412618AC5B3B00E1A4F8 /* libPods-OCHamcrest.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-OCHamcrest.a"; path = "Pods/build/Debug-iphoneos/libPods-OCHamcrest.a"; sourceTree = "<group>"; };
+		DFC2412718AC5B3B00E1A4F8 /* libPods-OCMockito.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-OCMockito.a"; path = "Pods/build/Debug-iphoneos/libPods-OCMockito.a"; sourceTree = "<group>"; };
+		DFC2412818AC5B3B00E1A4F8 /* libPods-Specta.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-Specta.a"; path = "Pods/build/Debug-iphoneos/libPods-Specta.a"; sourceTree = "<group>"; };
 		DFCBF82F18AC5885007201E4 /* FlickrBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCBF83218AC5885007201E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DFCBF83418AC5885007201E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,7 +62,6 @@
 		DFCBF85418AC5885007201E4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DFCBF85C18AC5885007201E4 /* FlickrBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrBookTests-Info.plist"; sourceTree = "<group>"; };
 		DFCBF85E18AC5885007201E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DFCBF86018AC5885007201E4 /* FlickrBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrBookTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,10 @@
 		DFCBF83118AC5885007201E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFC2412518AC5B3B00E1A4F8 /* libPods-Expecta.a */,
+				DFC2412618AC5B3B00E1A4F8 /* libPods-OCHamcrest.a */,
+				DFC2412718AC5B3B00E1A4F8 /* libPods-OCMockito.a */,
+				DFC2412818AC5B3B00E1A4F8 /* libPods-Specta.a */,
 				DFCBF83218AC5885007201E4 /* Foundation.framework */,
 				DFCBF83418AC5885007201E4 /* CoreGraphics.framework */,
 				DFCBF83618AC5885007201E4 /* UIKit.framework */,
@@ -146,8 +154,8 @@
 		DFCBF85A18AC5885007201E4 /* FlickrBookTests */ = {
 			isa = PBXGroup;
 			children = (
-				DFCBF86018AC5885007201E4 /* FlickrBookTests.m */,
 				DFCBF85B18AC5885007201E4 /* Supporting Files */,
+				DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */,
 			);
 			path = FlickrBookTests;
 			sourceTree = "<group>";
@@ -304,7 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFCBF86118AC5885007201E4 /* FlickrBookTests.m in Sources */,
+				DFC2412418AC5AED00E1A4F8 /* FlickrBookSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +466,7 @@
 		};
 		DFCBF86818AC5885007201E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C6607BD5CF4EBB9C86BB8E /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlickrBook.app/FlickrBook";
