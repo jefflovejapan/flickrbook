@@ -21,6 +21,7 @@
 }
 
 - (IBAction)pingFlickr:(id)sender {
+    
 }
 
 
@@ -33,6 +34,7 @@
 {
     [super viewDidLoad];
     self.frcDataSource = [[FRCDataSource alloc]initWithTableView:self.tableView];
+    self.flickrApiKey = @"575470904abb319eef55c42ba6e0d644";
 }
 
 - (void)didReceiveMemoryWarning

@@ -12,4 +12,5 @@
 @interface MainViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property(strong, nonatomic)NSString *flickrApiKey;
 @end

@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7Z6-UV-WWu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="525"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="7Z6-UV-WWu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,16 +30,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="anl-Xv-OLt" kind="push" id="X1d-HW-R6z"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="7Z6-UV-WWu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="4eq-xt-6GY"/>
                             <constraint firstItem="V0K-4i-LI3" firstAttribute="top" secondItem="7Z6-UV-WWu" secondAttribute="bottom" id="TD9-zZ-T2X"/>
-                            <constraint firstItem="7Z6-UV-WWu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="exp-R8-el0"/>
-                            <constraint firstAttribute="trailing" secondItem="7Z6-UV-WWu" secondAttribute="trailing" id="rEH-Lr-lXT"/>
-                            <constraint firstItem="7Z6-UV-WWu" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="ssb-vB-wU7"/>
+                            <constraint firstItem="7Z6-UV-WWu" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="m8c-7x-smv"/>
+                            <constraint firstAttribute="trailing" secondItem="7Z6-UV-WWu" secondAttribute="trailing" id="upl-Zw-bKj"/>
                         </constraints>
                     </view>
                     <toolbarItems>
@@ -61,10 +64,29 @@
             </objects>
             <point key="canvasLocation" x="968" y="-150"/>
         </scene>
+        <!--Photo Editor Controller-->
+        <scene sceneID="hhr-lB-Ufz">
+            <objects>
+                <viewController id="anl-Xv-OLt" customClass="AFPhotoEditorController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LcN-Z1-Ey2"/>
+                        <viewControllerLayoutGuide type="bottom" id="zSS-Lf-KfB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8nS-th-SOW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Btg-c9-CUu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4DC-yI-FRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="-150"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="dLB-Y9-2Gk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8cp-7a-85Y" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavController" automaticallyAdjustsScrollViewInsets="NO" id="8cp-7a-85Y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uDW-m2-BUv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

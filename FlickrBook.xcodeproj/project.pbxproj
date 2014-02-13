@@ -239,7 +239,6 @@
 				DF19D35B18AC6F6C00A785A1 /* FRCDataSource.h */,
 				DF19D35C18AC6F6C00A785A1 /* FRCDataSource.m */,
 				DFCBF84D18AC5885007201E4 /* Images.xcassets */,
-				DF19D36118AC7D8800A785A1 /* AviarySDK */,
 				DFCBF83918AC5885007201E4 /* Supporting Files */,
 			);
 			path = FlickrBook;
@@ -248,6 +247,7 @@
 		DFCBF83918AC5885007201E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DF19D36118AC7D8800A785A1 /* AviarySDK */,
 				DFCBF84118AC5885007201E4 /* AppDelegate.h */,
 				DFCBF84218AC5885007201E4 /* AppDelegate.m */,
 				DFCBF83A18AC5885007201E4 /* FlickrBook-Info.plist */,
@@ -261,8 +261,8 @@
 		DFCBF85A18AC5885007201E4 /* FlickrBookTests */ = {
 			isa = PBXGroup;
 			children = (
-				DFCBF85B18AC5885007201E4 /* Supporting Files */,
 				DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */,
+				DFCBF85B18AC5885007201E4 /* Supporting Files */,
 			);
 			path = FlickrBookTests;
 			sourceTree = "<group>";
