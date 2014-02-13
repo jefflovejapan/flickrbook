@@ -13,14 +13,14 @@
 		DF19D36E18AC7D8800A785A1 /* libAviarySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D36B18AC7D8800A785A1 /* libAviarySDK.a */; };
 		DF19D36F18AC7D8800A785A1 /* AviarySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF19D36D18AC7D8800A785A1 /* AviarySDKResources.bundle */; };
 		DF19D37318AC7FB100A785A1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37218AC7FB100A785A1 /* Accelerate.framework */; };
-		DF19D37518AC808700A785A1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37418AC808700A785A1 /* CoreText.framework */; };
+		DF19D37518AC808700A785A1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37418AC808700A785A1 /* CoreText.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		DF19D37718AC809600A785A1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37618AC809600A785A1 /* libsqlite3.0.dylib */; };
 		DF19D37918AC80A500A785A1 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37818AC80A500A785A1 /* libz.1.2.5.dylib */; };
 		DFC2412218AC5A0100E1A4F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412118AC5A0100E1A4F8 /* MainViewController.m */; };
 		DFC2412418AC5AED00E1A4F8 /* FlickrBookSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */; };
 		DFCBF83318AC5885007201E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83218AC5885007201E4 /* Foundation.framework */; };
 		DFCBF83518AC5885007201E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83418AC5885007201E4 /* CoreGraphics.framework */; };
-		DFCBF83718AC5885007201E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83618AC5885007201E4 /* UIKit.framework */; };
+		DFCBF83718AC5885007201E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83618AC5885007201E4 /* UIKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		DFCBF83D18AC5885007201E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF83B18AC5885007201E4 /* InfoPlist.strings */; };
 		DFCBF83F18AC5885007201E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCBF83E18AC5885007201E4 /* main.m */; };
 		DFCBF84318AC5885007201E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCBF84218AC5885007201E4 /* AppDelegate.m */; };
@@ -36,6 +36,8 @@
 		DFD58C7818AC872300E3FC53 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7718AC872300E3FC53 /* QuartzCore.framework */; };
 		DFD58C7A18AC872E00E3FC53 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7918AC872E00E3FC53 /* StoreKit.framework */; };
 		DFD58C7C18AC873900E3FC53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7B18AC873900E3FC53 /* SystemConfiguration.framework */; };
+		DFD58C7E18AC8DD100E3FC53 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7D18AC8DD100E3FC53 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DFD58C8018AC8E2300E3FC53 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7F18AC8E2300E3FC53 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		DFD58C7718AC872300E3FC53 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DFD58C7918AC872E00E3FC53 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DFD58C7B18AC873900E3FC53 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DFD58C7D18AC8DD100E3FC53 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		DFD58C7F18AC8E2300E3FC53 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD58C8018AC8E2300E3FC53 /* CoreData.framework in Frameworks */,
+				DFD58C7E18AC8DD100E3FC53 /* AdSupport.framework in Frameworks */,
 				DFD58C7C18AC873900E3FC53 /* SystemConfiguration.framework in Frameworks */,
 				DFD58C7A18AC872E00E3FC53 /* StoreKit.framework in Frameworks */,
 				DFD58C7818AC872300E3FC53 /* QuartzCore.framework in Frameworks */,
@@ -191,6 +197,8 @@
 		DFCBF83118AC5885007201E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFD58C7F18AC8E2300E3FC53 /* CoreData.framework */,
+				DFD58C7D18AC8DD100E3FC53 /* AdSupport.framework */,
 				DFD58C7B18AC873900E3FC53 /* SystemConfiguration.framework */,
 				DFD58C7918AC872E00E3FC53 /* StoreKit.framework */,
 				DFD58C7718AC872300E3FC53 /* QuartzCore.framework */,
@@ -217,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */,
-				DF19D36118AC7D8800A785A1 /* AviarySDK */,
 				DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */,
 				DF19D35E18AC7BAA00A785A1 /* Store.h */,
 				DF19D35F18AC7BAA00A785A1 /* Store.m */,
@@ -226,6 +233,7 @@
 				DF19D35B18AC6F6C00A785A1 /* FRCDataSource.h */,
 				DF19D35C18AC6F6C00A785A1 /* FRCDataSource.m */,
 				DFCBF84D18AC5885007201E4 /* Images.xcassets */,
+				DF19D36118AC7D8800A785A1 /* AviarySDK */,
 				DFCBF83918AC5885007201E4 /* Supporting Files */,
 			);
 			path = FlickrBook;

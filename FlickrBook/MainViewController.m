@@ -20,6 +20,15 @@
     return _mvc;
 }
 
+- (IBAction)pingFlickr:(id)sender {
+}
+
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setToolbarHidden:NO animated:YES];
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
