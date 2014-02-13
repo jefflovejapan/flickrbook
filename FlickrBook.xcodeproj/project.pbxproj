@@ -16,6 +16,9 @@
 		DF19D37518AC808700A785A1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37418AC808700A785A1 /* CoreText.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		DF19D37718AC809600A785A1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37618AC809600A785A1 /* libsqlite3.0.dylib */; };
 		DF19D37918AC80A500A785A1 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37818AC80A500A785A1 /* libz.1.2.5.dylib */; };
+		DFC14DD518AD3FB40021C7B3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */; };
+		DFC14DD618AD3FB90021C7B3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */; };
+		DFC14DD818AD40D00021C7B3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC14DD718AD40D00021C7B3 /* libPods.a */; };
 		DFC2412218AC5A0100E1A4F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412118AC5A0100E1A4F8 /* MainViewController.m */; };
 		DFC2412418AC5AED00E1A4F8 /* FlickrBookSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */; };
 		DFCBF83318AC5885007201E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83218AC5885007201E4 /* Foundation.framework */; };
@@ -71,6 +74,7 @@
 		DF19D37418AC808700A785A1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		DF19D37618AC809600A785A1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		DF19D37818AC80A500A785A1 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		DFC14DD718AD40D00021C7B3 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		DFC2412018AC5A0100E1A4F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DFC2412118AC5A0100E1A4F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrBookSpec.m; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC14DD818AD40D00021C7B3 /* libPods.a in Frameworks */,
 				DFCBF85518AC5885007201E4 /* XCTest.framework in Frameworks */,
 				DFCBF85718AC5885007201E4 /* UIKit.framework in Frameworks */,
 				DFCBF85618AC5885007201E4 /* Foundation.framework in Frameworks */,
@@ -197,6 +202,7 @@
 		DFCBF83118AC5885007201E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFC14DD718AD40D00021C7B3 /* libPods.a */,
 				DFD58C7F18AC8E2300E3FC53 /* CoreData.framework */,
 				DFD58C7D18AC8DD100E3FC53 /* AdSupport.framework */,
 				DFD58C7B18AC873900E3FC53 /* SystemConfiguration.framework */,
@@ -360,6 +366,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFC14DD618AD3FB90021C7B3 /* Main_iPad.storyboard in Resources */,
+				DFC14DD518AD3FB40021C7B3 /* Main_iPhone.storyboard in Resources */,
 				DFCBF85F18AC5885007201E4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,6 +618,14 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "FlickrBookTests/FlickrBookTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -629,6 +645,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlickrBook/FlickrBook-Prefix.pch";
 				INFOPLIST_FILE = "FlickrBookTests/FlickrBookTests-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
