@@ -12,6 +12,10 @@
 		DF19D36018AC7BAA00A785A1 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19D35F18AC7BAA00A785A1 /* Store.m */; };
 		DF19D36E18AC7D8800A785A1 /* libAviarySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D36B18AC7D8800A785A1 /* libAviarySDK.a */; };
 		DF19D36F18AC7D8800A785A1 /* AviarySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF19D36D18AC7D8800A785A1 /* AviarySDKResources.bundle */; };
+		DF19D37318AC7FB100A785A1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37218AC7FB100A785A1 /* Accelerate.framework */; };
+		DF19D37518AC808700A785A1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37418AC808700A785A1 /* CoreText.framework */; };
+		DF19D37718AC809600A785A1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37618AC809600A785A1 /* libsqlite3.0.dylib */; };
+		DF19D37918AC80A500A785A1 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37818AC80A500A785A1 /* libz.1.2.5.dylib */; };
 		DFC2412218AC5A0100E1A4F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412118AC5A0100E1A4F8 /* MainViewController.m */; };
 		DFC2412418AC5AED00E1A4F8 /* FlickrBookSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */; };
 		DFCBF83318AC5885007201E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83218AC5885007201E4 /* Foundation.framework */; };
@@ -27,6 +31,11 @@
 		DFCBF85618AC5885007201E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83218AC5885007201E4 /* Foundation.framework */; };
 		DFCBF85718AC5885007201E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83618AC5885007201E4 /* UIKit.framework */; };
 		DFCBF85F18AC5885007201E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF85D18AC5885007201E4 /* InfoPlist.strings */; };
+		DFD58C7418AC870E00E3FC53 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7318AC870E00E3FC53 /* MessageUI.framework */; };
+		DFD58C7618AC871600E3FC53 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7518AC871600E3FC53 /* OpenGLES.framework */; };
+		DFD58C7818AC872300E3FC53 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7718AC872300E3FC53 /* QuartzCore.framework */; };
+		DFD58C7A18AC872E00E3FC53 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7918AC872E00E3FC53 /* StoreKit.framework */; };
+		DFD58C7C18AC873900E3FC53 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7B18AC873900E3FC53 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +65,10 @@
 		DF19D36A18AC7D8800A785A1 /* AFPhotoEditorSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorSession.h; sourceTree = "<group>"; };
 		DF19D36B18AC7D8800A785A1 /* libAviarySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAviarySDK.a; sourceTree = "<group>"; };
 		DF19D36D18AC7D8800A785A1 /* AviarySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AviarySDKResources.bundle; sourceTree = "<group>"; };
+		DF19D37218AC7FB100A785A1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		DF19D37418AC808700A785A1 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DF19D37618AC809600A785A1 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		DF19D37818AC80A500A785A1 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		DFC2412018AC5A0100E1A4F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DFC2412118AC5A0100E1A4F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrBookSpec.m; sourceTree = "<group>"; };
@@ -80,6 +93,11 @@
 		DFCBF85418AC5885007201E4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DFCBF85C18AC5885007201E4 /* FlickrBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrBookTests-Info.plist"; sourceTree = "<group>"; };
 		DFCBF85E18AC5885007201E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFD58C7318AC870E00E3FC53 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		DFD58C7518AC871600E3FC53 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DFD58C7718AC872300E3FC53 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DFD58C7918AC872E00E3FC53 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DFD58C7B18AC873900E3FC53 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +105,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD58C7C18AC873900E3FC53 /* SystemConfiguration.framework in Frameworks */,
+				DFD58C7A18AC872E00E3FC53 /* StoreKit.framework in Frameworks */,
+				DFD58C7818AC872300E3FC53 /* QuartzCore.framework in Frameworks */,
+				DFD58C7618AC871600E3FC53 /* OpenGLES.framework in Frameworks */,
+				DFD58C7418AC870E00E3FC53 /* MessageUI.framework in Frameworks */,
+				DF19D37918AC80A500A785A1 /* libz.1.2.5.dylib in Frameworks */,
+				DF19D37718AC809600A785A1 /* libsqlite3.0.dylib in Frameworks */,
+				DF19D37518AC808700A785A1 /* CoreText.framework in Frameworks */,
+				DF19D37318AC7FB100A785A1 /* Accelerate.framework in Frameworks */,
 				DFCBF83518AC5885007201E4 /* CoreGraphics.framework in Frameworks */,
 				DFCBF83718AC5885007201E4 /* UIKit.framework in Frameworks */,
 				DF19D36E18AC7D8800A785A1 /* libAviarySDK.a in Frameworks */,
@@ -164,6 +191,15 @@
 		DFCBF83118AC5885007201E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFD58C7B18AC873900E3FC53 /* SystemConfiguration.framework */,
+				DFD58C7918AC872E00E3FC53 /* StoreKit.framework */,
+				DFD58C7718AC872300E3FC53 /* QuartzCore.framework */,
+				DFD58C7518AC871600E3FC53 /* OpenGLES.framework */,
+				DFD58C7318AC870E00E3FC53 /* MessageUI.framework */,
+				DF19D37818AC80A500A785A1 /* libz.1.2.5.dylib */,
+				DF19D37618AC809600A785A1 /* libsqlite3.0.dylib */,
+				DF19D37418AC808700A785A1 /* CoreText.framework */,
+				DF19D37218AC7FB100A785A1 /* Accelerate.framework */,
 				DFC2412518AC5B3B00E1A4F8 /* libPods-Expecta.a */,
 				DFC2412618AC5B3B00E1A4F8 /* libPods-OCHamcrest.a */,
 				DFC2412718AC5B3B00E1A4F8 /* libPods-OCMockito.a */,
@@ -509,6 +545,14 @@
 					"$(inherited)",
 					/Users/jeffblagdon/Developer/FlickrBook/FlickrBook/AviarySDK,
 				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -526,6 +570,14 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/jeffblagdon/Developer/FlickrBook/FlickrBook/AviarySDK,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Foundation,
+					"-framework",
+					XCTest,
+					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
