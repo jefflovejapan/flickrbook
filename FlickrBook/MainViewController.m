@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 
 @interface MainViewController ()
-
+@property(strong, nonatomic)FRCDataSource *frcDataSource;
 @end
 
 @implementation MainViewController
@@ -23,7 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.frcDataSource = [[FRCDataSource alloc]initWithTableView:self.tableView];
+	
 }
 
 - (void)didReceiveMemoryWarning

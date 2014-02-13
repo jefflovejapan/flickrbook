@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FRCDataSource.h"
 
 @interface MainViewController : UIViewController
 

@@ -9,7 +9,7 @@
 
 SpecBegin(MainViewController)
 
-describe(@"starting up", ^{
+describe(@"MainViewController", ^{
     __block MainViewController *_mvc;
     beforeEach(^{
         _mvc = [[MainViewController alloc]init];
@@ -18,6 +18,9 @@ describe(@"starting up", ^{
     });
     it(@"should have a tableview", ^{
         expect(_mvc.tableView).toNot.beNil();
+    });
+    it(@"s tableview's datasource should be class FRCDataSource", ^{
+        expect(_mvc.tableView.dataSource.class).to.equal(FRCDataSource.class);
     });
 });
 
