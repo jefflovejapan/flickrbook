@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0D751236844E47A68E33326C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40183B8FF7E546919D1077C8 /* libPods.a */; };
 		DF19D35D18AC6F6C00A785A1 /* FRCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19D35C18AC6F6C00A785A1 /* FRCDataSource.m */; };
+		DF19D36018AC7BAA00A785A1 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19D35F18AC7BAA00A785A1 /* Store.m */; };
+		DF19D36E18AC7D8800A785A1 /* libAviarySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D36B18AC7D8800A785A1 /* libAviarySDK.a */; };
+		DF19D36F18AC7D8800A785A1 /* AviarySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF19D36D18AC7D8800A785A1 /* AviarySDKResources.bundle */; };
 		DFC2412218AC5A0100E1A4F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412118AC5A0100E1A4F8 /* MainViewController.m */; };
 		DFC2412418AC5AED00E1A4F8 /* FlickrBookSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */; };
 		DFCBF83318AC5885007201E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBF83218AC5885007201E4 /* Foundation.framework */; };
@@ -41,6 +44,18 @@
 		59C6607BD5CF4EBB9C86BB8E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		DF19D35B18AC6F6C00A785A1 /* FRCDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCDataSource.h; sourceTree = "<group>"; };
 		DF19D35C18AC6F6C00A785A1 /* FRCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCDataSource.m; sourceTree = "<group>"; };
+		DF19D35E18AC7BAA00A785A1 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		DF19D35F18AC7BAA00A785A1 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		DF19D36318AC7D8800A785A1 /* AFOpenGLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOpenGLManager.h; sourceTree = "<group>"; };
+		DF19D36418AC7D8800A785A1 /* AFPhotoEditorContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorContext.h; sourceTree = "<group>"; };
+		DF19D36518AC7D8800A785A1 /* AFPhotoEditorController+InAppPurchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFPhotoEditorController+InAppPurchase.h"; sourceTree = "<group>"; };
+		DF19D36618AC7D8800A785A1 /* AFPhotoEditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorController.h; sourceTree = "<group>"; };
+		DF19D36718AC7D8800A785A1 /* AFPhotoEditorControllerOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorControllerOptions.h; sourceTree = "<group>"; };
+		DF19D36818AC7D8800A785A1 /* AFPhotoEditorCustomization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorCustomization.h; sourceTree = "<group>"; };
+		DF19D36918AC7D8800A785A1 /* AFPhotoEditorProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorProduct.h; sourceTree = "<group>"; };
+		DF19D36A18AC7D8800A785A1 /* AFPhotoEditorSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPhotoEditorSession.h; sourceTree = "<group>"; };
+		DF19D36B18AC7D8800A785A1 /* libAviarySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAviarySDK.a; sourceTree = "<group>"; };
+		DF19D36D18AC7D8800A785A1 /* AviarySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AviarySDKResources.bundle; sourceTree = "<group>"; };
 		DFC2412018AC5A0100E1A4F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DFC2412118AC5A0100E1A4F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		DFC2412318AC5AED00E1A4F8 /* FlickrBookSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrBookSpec.m; sourceTree = "<group>"; };
@@ -74,6 +89,7 @@
 			files = (
 				DFCBF83518AC5885007201E4 /* CoreGraphics.framework in Frameworks */,
 				DFCBF83718AC5885007201E4 /* UIKit.framework in Frameworks */,
+				DF19D36E18AC7D8800A785A1 /* libAviarySDK.a in Frameworks */,
 				DFCBF83318AC5885007201E4 /* Foundation.framework in Frameworks */,
 				0D751236844E47A68E33326C /* libPods.a in Frameworks */,
 			);
@@ -92,6 +108,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF19D36118AC7D8800A785A1 /* AviarySDK */ = {
+			isa = PBXGroup;
+			children = (
+				DF19D36218AC7D8800A785A1 /* Headers */,
+				DF19D36B18AC7D8800A785A1 /* libAviarySDK.a */,
+				DF19D36C18AC7D8800A785A1 /* Resources */,
+			);
+			path = AviarySDK;
+			sourceTree = "<group>";
+		};
+		DF19D36218AC7D8800A785A1 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DF19D36318AC7D8800A785A1 /* AFOpenGLManager.h */,
+				DF19D36418AC7D8800A785A1 /* AFPhotoEditorContext.h */,
+				DF19D36518AC7D8800A785A1 /* AFPhotoEditorController+InAppPurchase.h */,
+				DF19D36618AC7D8800A785A1 /* AFPhotoEditorController.h */,
+				DF19D36718AC7D8800A785A1 /* AFPhotoEditorControllerOptions.h */,
+				DF19D36818AC7D8800A785A1 /* AFPhotoEditorCustomization.h */,
+				DF19D36918AC7D8800A785A1 /* AFPhotoEditorProduct.h */,
+				DF19D36A18AC7D8800A785A1 /* AFPhotoEditorSession.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		DF19D36C18AC7D8800A785A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF19D36D18AC7D8800A785A1 /* AviarySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DFCBF82618AC5884007201E4 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +181,10 @@
 			isa = PBXGroup;
 			children = (
 				DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */,
+				DF19D36118AC7D8800A785A1 /* AviarySDK */,
 				DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */,
+				DF19D35E18AC7BAA00A785A1 /* Store.h */,
+				DF19D35F18AC7BAA00A785A1 /* Store.m */,
 				DFC2412018AC5A0100E1A4F8 /* MainViewController.h */,
 				DFC2412118AC5A0100E1A4F8 /* MainViewController.m */,
 				DF19D35B18AC6F6C00A785A1 /* FRCDataSource.h */,
@@ -254,6 +306,7 @@
 			files = (
 				DFCBF84918AC5885007201E4 /* Main_iPad.storyboard in Resources */,
 				DFCBF84E18AC5885007201E4 /* Images.xcassets in Resources */,
+				DF19D36F18AC7D8800A785A1 /* AviarySDKResources.bundle in Resources */,
 				DFCBF84618AC5885007201E4 /* Main_iPhone.storyboard in Resources */,
 				DFCBF83D18AC5885007201E4 /* InfoPlist.strings in Resources */,
 			);
@@ -310,6 +363,7 @@
 				DF19D35D18AC6F6C00A785A1 /* FRCDataSource.m in Sources */,
 				DFCBF84318AC5885007201E4 /* AppDelegate.m in Sources */,
 				DFC2412218AC5A0100E1A4F8 /* MainViewController.m in Sources */,
+				DF19D36018AC7BAA00A785A1 /* Store.m in Sources */,
 				DFCBF83F18AC5885007201E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +505,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlickrBook/FlickrBook-Prefix.pch";
 				INFOPLIST_FILE = "FlickrBook/FlickrBook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jeffblagdon/Developer/FlickrBook/FlickrBook/AviarySDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -465,6 +523,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlickrBook/FlickrBook-Prefix.pch";
 				INFOPLIST_FILE = "FlickrBook/FlickrBook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jeffblagdon/Developer/FlickrBook/FlickrBook/AviarySDK,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

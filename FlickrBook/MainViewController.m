@@ -24,7 +24,6 @@
 {
     [super viewDidLoad];
     self.frcDataSource = [[FRCDataSource alloc]initWithTableView:self.tableView];
-	
 }
 
 - (void)didReceiveMemoryWarning
