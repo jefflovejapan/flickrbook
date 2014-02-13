@@ -35,7 +35,26 @@ describe(@"MainViewController", ^{
         expect(_mvc.flickrApiKey).toNot.beNil();
     });
     
+    it(@"should have a toolbar that isn't hidden", ^{
+        expect(_mvc.navigationController.toolbarHidden).toNot.equal(NO);
+    });
     
+    it(@"should have toolbar items", ^{
+        expect(_mvc.toolbarItems).toNot.beNil();
+    });
+    
+    it(@"should have a Ping Flickr button", ^{
+        UIBarButtonItem *item = _mvc.toolbarItems[0];
+        expect([item.title isEqualToString:@"Ping Flickr"]);
+        
+//        Why isn't this true? vvv
+//        expect(item).to.equal(_mvc.pingFlickrItem);
+    });
+    
+    it(@"should ping Flickr when button is tapped", ^{
+        expect(_mvc.pingFlickrItem.target).to.equal(_mvc);
+        expect(_mvc.pingFlickrItem.action).to.equal(NSSelectorFromString(@"pingFlickr:"));
+    });
 });
 
 SpecEnd

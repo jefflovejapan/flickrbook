@@ -18,10 +18,12 @@
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main_iPhone" bundle:nil];
     MainViewController *_mvc = [sb instantiateViewControllerWithIdentifier:@"MainViewController"];
     return _mvc;
+    sel_registerName("pingFlickr:");
 }
 
 - (IBAction)pingFlickr:(id)sender {
-    
+    NSLog(@"pinging flickr");
+    NSLog(@"pingflickritem: %@", self.pingFlickrItem);
 }
 
 

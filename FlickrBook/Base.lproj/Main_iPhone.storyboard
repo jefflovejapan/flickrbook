@@ -49,7 +49,7 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="KcT-Q5-U5w"/>
                         <barButtonItem title="Ping Flickr" id="I3w-gq-XD1">
                             <connections>
-                                <action selector="pingFlickr:" destination="vXZ-lx-hvc" id="fqo-w3-W1o"/>
+                                <action selector="pingFlickr:" destination="vXZ-lx-hvc" id="bWn-dJ-CLb"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="slt-hi-hhy"/>
@@ -57,6 +57,7 @@
                     <navigationItem key="navigationItem" id="rXf-Hb-JYE"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="pingFlickrItem" destination="I3w-gq-XD1" id="YEM-y7-yfy"/>
                         <outlet property="tableView" destination="7Z6-UV-WWu" id="aUs-qQ-U4V"/>
                     </connections>
                 </viewController>
