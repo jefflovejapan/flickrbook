@@ -24,6 +24,9 @@
 - (IBAction)pingFlickr:(id)sender {
     NSLog(@"pinging flickr");
     NSLog(@"pingflickritem: %@", self.pingFlickrItem);
+    NSURL *downloadURL = [NSURL URLWithString:@"http://www.flickr.com/"];
+    NSString *data = [NSString stringWithContentsOfURL:downloadURL encoding:NSUTF8StringEncoding error:NULL];
+    NSLog(@"%@", data);
 }
 
 
