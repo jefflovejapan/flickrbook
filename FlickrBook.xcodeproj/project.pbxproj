@@ -17,6 +17,7 @@
 		DF19D37718AC809600A785A1 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37618AC809600A785A1 /* libsqlite3.0.dylib */; };
 		DF19D37918AC80A500A785A1 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37818AC80A500A785A1 /* libz.1.2.5.dylib */; };
 		DFB75B2418B07E200066245A /* FlickrJSResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B2318B07E200066245A /* FlickrJSResponseSerializer.m */; };
+		DFB75B2718B1142F0066245A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B2518B1142E0066245A /* Model.xcdatamodeld */; };
 		DFC14DD518AD3FB40021C7B3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */; };
 		DFC14DD618AD3FB90021C7B3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */; };
 		DFC14DD818AD40D00021C7B3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC14DD718AD40D00021C7B3 /* libPods.a */; };
@@ -77,6 +78,7 @@
 		DF19D37818AC80A500A785A1 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		DFB75B2218B07E200066245A /* FlickrJSResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrJSResponseSerializer.h; sourceTree = "<group>"; };
 		DFB75B2318B07E200066245A /* FlickrJSResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrJSResponseSerializer.m; sourceTree = "<group>"; };
+		DFB75B2618B1142F0066245A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DFC14DD718AD40D00021C7B3 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		DFC2412018AC5A0100E1A4F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DFC2412118AC5A0100E1A4F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 		DFCBF83818AC5885007201E4 /* FlickrBook */ = {
 			isa = PBXGroup;
 			children = (
+				DFB75B2518B1142E0066245A /* Model.xcdatamodeld */,
 				DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */,
 				DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */,
 				DF19D35E18AC7BAA00A785A1 /* Store.h */,
@@ -420,6 +423,7 @@
 				DF19D35D18AC6F6C00A785A1 /* FRCDataSource.m in Sources */,
 				DFCBF84318AC5885007201E4 /* AppDelegate.m in Sources */,
 				DFB75B2418B07E200066245A /* FlickrJSResponseSerializer.m in Sources */,
+				DFB75B2718B1142F0066245A /* Model.xcdatamodeld in Sources */,
 				DFC2412218AC5A0100E1A4F8 /* MainViewController.m in Sources */,
 				DF19D36018AC7BAA00A785A1 /* Store.m in Sources */,
 				DFCBF83F18AC5885007201E4 /* main.m in Sources */,
@@ -695,6 +699,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DFB75B2518B1142E0066245A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DFB75B2618B1142F0066245A /* Model.xcdatamodel */,
+			);
+			currentVersion = DFB75B2618B1142F0066245A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DFCBF82718AC5884007201E4 /* Project object */;
 }

@@ -33,7 +33,7 @@
     NSDictionary *params = @{@"method": @"flickr.commons.getInstitutions", @"api_key": self.flickrApiKey, @"format": @"json"};
     
     [manager GET:UrlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"oh yeah, got this response: %@", responseObject);
+        NSLog(@"oh yeah, got this response: %@", responseObject[@"institutions"][@"institution"]);
         NSLog(@"responseObject is a %@", [responseObject class]);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"Ouch, still got this error: %@", error);
