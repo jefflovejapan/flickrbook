@@ -7,8 +7,11 @@
 //
 
 #import "MainViewController.h"
+#import "FlickrJSResponseSerializer.h"
+#import <AFURLRequestSerialization.h>
+#import <AFHTTPSessionManager.h>
 
-@interface MainViewController ()
+@interface MainViewController () <NSURLSessionDataDelegate>
 @property(strong, nonatomic)FRCDataSource *frcDataSource;
 @end
 
@@ -22,11 +25,23 @@
 }
 
 - (IBAction)pingFlickr:(id)sender {
-    NSLog(@"pinging flickr");
-    NSLog(@"pingflickritem: %@", self.pingFlickrItem);
-    NSURL *downloadURL = [NSURL URLWithString:@"http://www.flickr.com/"];
-    NSString *data = [NSString stringWithContentsOfURL:downloadURL encoding:NSUTF8StringEncoding error:NULL];
-    NSLog(@"%@", data);
+    FlickrJSResponseSerializer *respSrlzr = [FlickrJSResponseSerializer serializer];
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    manager.responseSerializer = respSrlzr;
+
+    NSString *UrlString = @"http://api.flickr.com/services/rest/";
+    NSDictionary *params = @{@"method": @"flickr.commons.getInstitutions", @"api_key": self.flickrApiKey, @"format": @"json"};
+    
+    [manager GET:UrlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"oh yeah, got this response: %@", responseObject);
+        NSLog(@"responseObject is a %@", [responseObject class]);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"Ouch, still got this error: %@", error);
+    }];
+}
+
+-(void)writeDerpWithString:(NSString *)barf{
+    NSLog(@"barf: %@", barf);
 }
 
 
