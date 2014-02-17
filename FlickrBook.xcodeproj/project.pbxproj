@@ -23,6 +23,7 @@
 		DFB75B3D18B194120066245A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7F18AC8E2300E3FC53 /* CoreData.framework */; };
 		DFB75B4018B1A1AE0066245A /* Institution.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B3F18B1A1AE0066245A /* Institution.m */; };
 		DFB75B4318B1A1AE0066245A /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B4218B1A1AE0066245A /* Photo.m */; };
+		DFB75B4718B1ABE40066245A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFB75B4618B1ABE40066245A /* README.md */; };
 		DFC14DD518AD3FB40021C7B3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */; };
 		DFC14DD618AD3FB90021C7B3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */; };
 		DFC14DD818AD40D00021C7B3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC14DD718AD40D00021C7B3 /* libPods.a */; };
@@ -92,6 +93,7 @@
 		DFB75B3F18B1A1AE0066245A /* Institution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Institution.m; sourceTree = "<group>"; };
 		DFB75B4118B1A1AE0066245A /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		DFB75B4218B1A1AE0066245A /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		DFB75B4618B1ABE40066245A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		DFC14DD718AD40D00021C7B3 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		DFC2412018AC5A0100E1A4F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DFC2412118AC5A0100E1A4F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 		DFCBF83918AC5885007201E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFB75B4618B1ABE40066245A /* README.md */,
 				DF19D36118AC7D8800A785A1 /* AviarySDK */,
 				DFCBF84118AC5885007201E4 /* AppDelegate.h */,
 				DFCBF84218AC5885007201E4 /* AppDelegate.m */,
@@ -384,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB75B4718B1ABE40066245A /* README.md in Resources */,
 				DFCBF84918AC5885007201E4 /* Main_iPad.storyboard in Resources */,
 				DFCBF84E18AC5885007201E4 /* Images.xcassets in Resources */,
 				DF19D36F18AC7D8800A785A1 /* AviarySDKResources.bundle in Resources */,
