@@ -10,7 +10,6 @@
 
 @interface Institution (Flickr)
 
-@property (strong, nonatomic) NSManagedObjectContext *context;
 +(void)loadInstitutionsFromFlickrArray:(NSArray *)instArray;
 
 @end

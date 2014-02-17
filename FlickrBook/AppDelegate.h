@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Store;
+#import "Store.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

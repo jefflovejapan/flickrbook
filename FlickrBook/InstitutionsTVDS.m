@@ -7,6 +7,7 @@
 //
 
 #import "InstitutionsTVDS.h"
+#import "Institution.h"
 #import <CoreData/CoreData.h>
 
 
@@ -32,6 +33,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell;
     cell = [tableView dequeueReusableCellWithIdentifier:@"MainCell"];
+    Institution *inst = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = inst.name;
     return cell;
 }
 

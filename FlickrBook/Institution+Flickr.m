@@ -7,14 +7,26 @@
 //
 
 #import "Institution+Flickr.h"
+#import "AppDelegate.h"
+#import <CoreData/CoreData.h>
 
 @implementation Institution (Flickr)
 +(void)loadInstitutionsFromFlickrArray:(NSArray *)instArray{
-    for (NSDictionary *inst in instArray) {
-        NSString *unique = inst[@"nsid"];
-        NSLog(@"unique: %@", unique);
-//        add institution to core data database
+    
+    AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Institution"];
+    NSArray *serverUniques = [instArray valueForKey:@"nsid"];
+    request.predicate = [NSPredicate predicateWithFormat:@"unique in %@", serverUniques];
+    NSManagedObjectContext *context = delegate.store.managedObjectContext;
+    NSError *error;
+    NSArray *matches = [context executeFetchRequest:request error:&error];
+    NSSet *uniqueSet = [matches valueForKey:@"unique"];
+    for (NSString *unique in serverUniques) {
+        if (![uniqueSet containsObject:unique]) {
+            self createInstitution
+        }
     }
+    
 }
 
 @end
