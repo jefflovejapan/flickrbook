@@ -7,6 +7,12 @@
 //
 
 #import "FRCDataSource.h"
+#import <CoreData/CoreData.h>
+
+@interface FRCDataSource () <UITableViewDataSource, UITableViewDelegate>
+@property NSFetchedResultsController *fetchedResultsController;
+
+@end
 
 @implementation FRCDataSource
 
@@ -27,6 +33,17 @@
     UITableViewCell *cell;
     cell = [tableView dequeueReusableCellWithIdentifier:@"MainCell"];
     return cell;
+}
+
+- (void) setContext:(NSManagedObjectContext *) context {
+    _context = context;
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Institution"];
+    request.predicate = nil;
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name"
+                                                              ascending:YES
+                                                               selector:@selector(localizedStandardCompare:)]];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc]initWithFetchRequest:request managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
+    
 }
 
 

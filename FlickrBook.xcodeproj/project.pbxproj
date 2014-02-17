@@ -18,6 +18,11 @@
 		DF19D37918AC80A500A785A1 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D37818AC80A500A785A1 /* libz.1.2.5.dylib */; };
 		DFB75B2418B07E200066245A /* FlickrJSResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B2318B07E200066245A /* FlickrJSResponseSerializer.m */; };
 		DFB75B2718B1142F0066245A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B2518B1142E0066245A /* Model.xcdatamodeld */; };
+		DFB75B3918B1360D0066245A /* Photo+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B3818B1360D0066245A /* Photo+Flickr.m */; };
+		DFB75B3C18B136270066245A /* Institution+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B3B18B136270066245A /* Institution+Flickr.m */; };
+		DFB75B3D18B194120066245A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD58C7F18AC8E2300E3FC53 /* CoreData.framework */; };
+		DFB75B4018B1A1AE0066245A /* Institution.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B3F18B1A1AE0066245A /* Institution.m */; };
+		DFB75B4318B1A1AE0066245A /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B4218B1A1AE0066245A /* Photo.m */; };
 		DFC14DD518AD3FB40021C7B3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */; };
 		DFC14DD618AD3FB90021C7B3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */; };
 		DFC14DD818AD40D00021C7B3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC14DD718AD40D00021C7B3 /* libPods.a */; };
@@ -79,6 +84,14 @@
 		DFB75B2218B07E200066245A /* FlickrJSResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrJSResponseSerializer.h; sourceTree = "<group>"; };
 		DFB75B2318B07E200066245A /* FlickrJSResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrJSResponseSerializer.m; sourceTree = "<group>"; };
 		DFB75B2618B1142F0066245A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DFB75B3718B1360D0066245A /* Photo+Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+Flickr.h"; sourceTree = "<group>"; };
+		DFB75B3818B1360D0066245A /* Photo+Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+Flickr.m"; sourceTree = "<group>"; };
+		DFB75B3A18B136270066245A /* Institution+Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Institution+Flickr.h"; sourceTree = "<group>"; };
+		DFB75B3B18B136270066245A /* Institution+Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Institution+Flickr.m"; sourceTree = "<group>"; };
+		DFB75B3E18B1A1AE0066245A /* Institution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Institution.h; sourceTree = "<group>"; };
+		DFB75B3F18B1A1AE0066245A /* Institution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Institution.m; sourceTree = "<group>"; };
+		DFB75B4118B1A1AE0066245A /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		DFB75B4218B1A1AE0066245A /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		DFC14DD718AD40D00021C7B3 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		DFC2412018AC5A0100E1A4F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DFC2412118AC5A0100E1A4F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -141,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB75B3D18B194120066245A /* CoreData.framework in Frameworks */,
 				DFC14DD818AD40D00021C7B3 /* libPods.a in Frameworks */,
 				DFCBF85518AC5885007201E4 /* XCTest.framework in Frameworks */,
 				DFCBF85718AC5885007201E4 /* UIKit.framework in Frameworks */,
@@ -236,16 +250,24 @@
 			isa = PBXGroup;
 			children = (
 				DFB75B2518B1142E0066245A /* Model.xcdatamodeld */,
+				DFB75B4118B1A1AE0066245A /* Photo.h */,
+				DFB75B4218B1A1AE0066245A /* Photo.m */,
+				DFB75B3E18B1A1AE0066245A /* Institution.h */,
+				DFB75B3F18B1A1AE0066245A /* Institution.m */,
+				DFB75B3718B1360D0066245A /* Photo+Flickr.h */,
+				DFB75B3818B1360D0066245A /* Photo+Flickr.m */,
+				DFB75B3A18B136270066245A /* Institution+Flickr.h */,
+				DFB75B3B18B136270066245A /* Institution+Flickr.m */,
 				DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */,
 				DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */,
-				DF19D35E18AC7BAA00A785A1 /* Store.h */,
-				DF19D35F18AC7BAA00A785A1 /* Store.m */,
 				DFC2412018AC5A0100E1A4F8 /* MainViewController.h */,
 				DFC2412118AC5A0100E1A4F8 /* MainViewController.m */,
 				DFB75B2218B07E200066245A /* FlickrJSResponseSerializer.h */,
 				DFB75B2318B07E200066245A /* FlickrJSResponseSerializer.m */,
 				DF19D35B18AC6F6C00A785A1 /* FRCDataSource.h */,
 				DF19D35C18AC6F6C00A785A1 /* FRCDataSource.m */,
+				DF19D35E18AC7BAA00A785A1 /* Store.h */,
+				DF19D35F18AC7BAA00A785A1 /* Store.m */,
 				DFCBF84D18AC5885007201E4 /* Images.xcassets */,
 				DFCBF83918AC5885007201E4 /* Supporting Files */,
 			);
@@ -420,11 +442,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB75B4018B1A1AE0066245A /* Institution.m in Sources */,
+				DFB75B3C18B136270066245A /* Institution+Flickr.m in Sources */,
+				DFB75B3918B1360D0066245A /* Photo+Flickr.m in Sources */,
 				DF19D35D18AC6F6C00A785A1 /* FRCDataSource.m in Sources */,
 				DFCBF84318AC5885007201E4 /* AppDelegate.m in Sources */,
 				DFB75B2418B07E200066245A /* FlickrJSResponseSerializer.m in Sources */,
 				DFB75B2718B1142F0066245A /* Model.xcdatamodeld in Sources */,
 				DFC2412218AC5A0100E1A4F8 /* MainViewController.m in Sources */,
+				DFB75B4318B1A1AE0066245A /* Photo.m in Sources */,
 				DF19D36018AC7BAA00A785A1 /* Store.m in Sources */,
 				DFCBF83F18AC5885007201E4 /* main.m in Sources */,
 			);

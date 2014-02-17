@@ -10,6 +10,8 @@
 
 @interface FRCDataSource : NSObject<UITableViewDataSource>
 @property(strong, nonatomic)UITableView *tableView;
+@property(strong, nonatomic)NSManagedObjectContext *context;
 -(id)initWithTableView:(UITableView *)tableView;
+
 
 @end

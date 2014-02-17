@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "FlickrJSResponseSerializer.h"
+#import "Institution+Flickr.h"
 #import <AFURLRequestSerialization.h>
 #import <AFHTTPSessionManager.h>
 
@@ -31,14 +32,16 @@
 
     NSString *UrlString = @"http://api.flickr.com/services/rest/";
     NSDictionary *params = @{@"method": @"flickr.commons.getInstitutions", @"api_key": self.flickrApiKey, @"format": @"json"};
-    
     [manager GET:UrlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"oh yeah, got this response: %@", responseObject[@"institutions"][@"institution"]);
-        NSLog(@"responseObject is a %@", [responseObject class]);
+        NSDictionary *responseDict = responseObject;
+        NSArray *instArray = [[NSArray alloc]initWithArray:responseDict[@"institutions"][@"institution"]];
+        NSLog(@"instArray: %@", instArray);
+        [Institution loadInstitutionsFromFlickrArray:instArray];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"Ouch, still got this error: %@", error);
+        NSLog(@"Derp, failure");
     }];
-}
+ }
+ 
 
 -(void)writeDerpWithString:(NSString *)barf{
     NSLog(@"barf: %@", barf);
