@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Store.h"
 
 @interface AppDelegate ()
 
@@ -18,15 +19,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSArray *paths = [[NSFileManager defaultManager]URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
-    NSURL *docURL = [[self applicationDocumentsDirectory] URL]
     [self startFlickrFetch];
     // Override point for customization after application launch.
     return YES;
 }
 
+- (void)startFlickrFetch
 {
-    
+    NSLog(@"starting flickrfetch");
+}
+
+-(Store *)store{
+    if (!_store) {
+        _store = [[Store alloc]init];
+    }
+    return _store;
 }
      
      

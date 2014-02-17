@@ -5,6 +5,8 @@
 
 
 #import "MainViewController.h"
+#import "Store.h"
+#import "InstitutionsTVDS.h"
 
 
 SpecBegin(MainViewController)
@@ -24,7 +26,7 @@ describe(@"MainViewController", ^{
     });
 
     it(@"s tableview's datasource should be class FRCDataSource", ^{
-        expect(_mvc.tableView.dataSource.class).to.equal(FRCDataSource.class);
+        expect(_mvc.tableView.dataSource.class).to.equal(InstitutionsTVDS.class);
     });
 
     it(@"should be in a navigation controller", ^{
@@ -54,6 +56,16 @@ describe(@"MainViewController", ^{
     it(@"should ping Flickr when button is tapped", ^{
         expect(_mvc.pingFlickrItem.target).to.equal(_mvc);
         expect(_mvc.pingFlickrItem.action).to.equal(NSSelectorFromString(@"pingFlickr:"));
+    });
+});
+
+describe(@"Store", ^{
+    __block Store *_store;
+    beforeAll(^{
+        _store = [[Store alloc]init];
+    });
+    it(@"should create a valid managedobjectcontext", ^{
+        expect(_store.managedObjectContext).toNot.beNil();
     });
 });
 

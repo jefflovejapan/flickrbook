@@ -1,17 +1,16 @@
 //
-//  FRCDataSource.h
+//  InstitutionsTVDS.h
 //  FlickrBook
 //
-//  Created by Blagdon Jeffrey on 2/12/14.
+//  Created by Blagdon Jeffrey on 2/16/14.
 //  Copyright (c) 2014 Jeffrey Blagdon. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface FRCDataSource : NSObject<UITableViewDataSource>
+@interface InstitutionsTVDS : NSObject <UITableViewDataSource>
 @property(strong, nonatomic)UITableView *tableView;
 @property(strong, nonatomic)NSManagedObjectContext *context;
 -(id)initWithTableView:(UITableView *)tableView;
-
 
 @end

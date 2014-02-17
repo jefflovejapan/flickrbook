@@ -1,21 +1,21 @@
 //
-//  FRCDataSource.m
+//  InstitutionsTVDS.m
 //  FlickrBook
 //
-//  Created by Blagdon Jeffrey on 2/12/14.
+//  Created by Blagdon Jeffrey on 2/16/14.
 //  Copyright (c) 2014 Jeffrey Blagdon. All rights reserved.
 //
 
-#import "FRCDataSource.h"
+#import "InstitutionsTVDS.h"
 #import <CoreData/CoreData.h>
 
-@interface FRCDataSource () <UITableViewDataSource, UITableViewDelegate>
-@property NSFetchedResultsController *fetchedResultsController;
+
+@interface InstitutionsTVDS () <UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic)NSFetchedResultsController *fetchedResultsController;
 
 @end
 
-@implementation FRCDataSource
-
+@implementation InstitutionsTVDS
 -(id)initWithTableView:(UITableView *)tableView{
     self = [super init];
     if (self) {

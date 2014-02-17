@@ -9,11 +9,12 @@
 #import "MainViewController.h"
 #import "FlickrJSResponseSerializer.h"
 #import "Institution+Flickr.h"
+#import "InstitutionsTVDS.h"
 #import <AFURLRequestSerialization.h>
 #import <AFHTTPSessionManager.h>
 
 @interface MainViewController () <NSURLSessionDataDelegate>
-@property(strong, nonatomic)FRCDataSource *frcDataSource;
+@property(strong, nonatomic)InstitutionsTVDS *dataSource;
 @end
 
 @implementation MainViewController
@@ -56,7 +57,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.frcDataSource = [[FRCDataSource alloc]initWithTableView:self.tableView];
+    self.dataSource = [[InstitutionsTVDS alloc]initWithTableView:self.tableView];
     self.flickrApiKey = @"575470904abb319eef55c42ba6e0d644";
 }
 

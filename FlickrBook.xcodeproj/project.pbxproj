@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D751236844E47A68E33326C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 40183B8FF7E546919D1077C8 /* libPods.a */; };
-		DF19D35D18AC6F6C00A785A1 /* FRCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19D35C18AC6F6C00A785A1 /* FRCDataSource.m */; };
 		DF19D36018AC7BAA00A785A1 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19D35F18AC7BAA00A785A1 /* Store.m */; };
 		DF19D36E18AC7D8800A785A1 /* libAviarySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF19D36B18AC7D8800A785A1 /* libAviarySDK.a */; };
 		DF19D36F18AC7D8800A785A1 /* AviarySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF19D36D18AC7D8800A785A1 /* AviarySDKResources.bundle */; };
@@ -24,6 +23,7 @@
 		DFB75B4018B1A1AE0066245A /* Institution.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B3F18B1A1AE0066245A /* Institution.m */; };
 		DFB75B4318B1A1AE0066245A /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B4218B1A1AE0066245A /* Photo.m */; };
 		DFB75B4718B1ABE40066245A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DFB75B4618B1ABE40066245A /* README.md */; };
+		DFB75B4A18B1B8FA0066245A /* InstitutionsTVDS.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB75B4918B1B8FA0066245A /* InstitutionsTVDS.m */; };
 		DFC14DD518AD3FB40021C7B3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */; };
 		DFC14DD618AD3FB90021C7B3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */; };
 		DFC14DD818AD40D00021C7B3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC14DD718AD40D00021C7B3 /* libPods.a */; };
@@ -64,8 +64,6 @@
 /* Begin PBXFileReference section */
 		40183B8FF7E546919D1077C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C6607BD5CF4EBB9C86BB8E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		DF19D35B18AC6F6C00A785A1 /* FRCDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCDataSource.h; sourceTree = "<group>"; };
-		DF19D35C18AC6F6C00A785A1 /* FRCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCDataSource.m; sourceTree = "<group>"; };
 		DF19D35E18AC7BAA00A785A1 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
 		DF19D35F18AC7BAA00A785A1 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 		DF19D36318AC7D8800A785A1 /* AFOpenGLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFOpenGLManager.h; sourceTree = "<group>"; };
@@ -94,6 +92,8 @@
 		DFB75B4118B1A1AE0066245A /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		DFB75B4218B1A1AE0066245A /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		DFB75B4618B1ABE40066245A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		DFB75B4818B1B8FA0066245A /* InstitutionsTVDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstitutionsTVDS.h; sourceTree = "<group>"; };
+		DFB75B4918B1B8FA0066245A /* InstitutionsTVDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstitutionsTVDS.m; sourceTree = "<group>"; };
 		DFC14DD718AD40D00021C7B3 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		DFC2412018AC5A0100E1A4F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		DFC2412118AC5A0100E1A4F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -252,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				DFB75B2518B1142E0066245A /* Model.xcdatamodeld */,
+				DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */,
+				DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */,
 				DFB75B4118B1A1AE0066245A /* Photo.h */,
 				DFB75B4218B1A1AE0066245A /* Photo.m */,
 				DFB75B3E18B1A1AE0066245A /* Institution.h */,
@@ -260,14 +262,12 @@
 				DFB75B3818B1360D0066245A /* Photo+Flickr.m */,
 				DFB75B3A18B136270066245A /* Institution+Flickr.h */,
 				DFB75B3B18B136270066245A /* Institution+Flickr.m */,
-				DFCBF84418AC5885007201E4 /* Main_iPhone.storyboard */,
-				DFCBF84718AC5885007201E4 /* Main_iPad.storyboard */,
 				DFC2412018AC5A0100E1A4F8 /* MainViewController.h */,
 				DFC2412118AC5A0100E1A4F8 /* MainViewController.m */,
 				DFB75B2218B07E200066245A /* FlickrJSResponseSerializer.h */,
 				DFB75B2318B07E200066245A /* FlickrJSResponseSerializer.m */,
-				DF19D35B18AC6F6C00A785A1 /* FRCDataSource.h */,
-				DF19D35C18AC6F6C00A785A1 /* FRCDataSource.m */,
+				DFB75B4818B1B8FA0066245A /* InstitutionsTVDS.h */,
+				DFB75B4918B1B8FA0066245A /* InstitutionsTVDS.m */,
 				DF19D35E18AC7BAA00A785A1 /* Store.h */,
 				DF19D35F18AC7BAA00A785A1 /* Store.m */,
 				DFCBF84D18AC5885007201E4 /* Images.xcassets */,
@@ -448,8 +448,8 @@
 			files = (
 				DFB75B4018B1A1AE0066245A /* Institution.m in Sources */,
 				DFB75B3C18B136270066245A /* Institution+Flickr.m in Sources */,
+				DFB75B4A18B1B8FA0066245A /* InstitutionsTVDS.m in Sources */,
 				DFB75B3918B1360D0066245A /* Photo+Flickr.m in Sources */,
-				DF19D35D18AC6F6C00A785A1 /* FRCDataSource.m in Sources */,
 				DFCBF84318AC5885007201E4 /* AppDelegate.m in Sources */,
 				DFB75B2418B07E200066245A /* FlickrJSResponseSerializer.m in Sources */,
 				DFB75B2718B1142F0066245A /* Model.xcdatamodeld in Sources */,

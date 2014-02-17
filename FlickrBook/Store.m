@@ -7,7 +7,20 @@
 //
 
 #import "Store.h"
+@interface Store()
+@end
+
 
 @implementation Store
+
+-(NSManagedObjectContext *)managedObjectContext{
+    if (!_managedObjectContext) {
+        NSArray *paths = [[NSFileManager defaultManager]URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
+        NSURL *documentsURL = [paths objectAtIndex:0];
+        UIManagedDocument *doc = [[UIManagedDocument alloc]initWithFileURL:[documentsURL URLByAppendingPathComponent:@"FlickrDatabase"]];
+        _managedObjectContext = [doc managedObjectContext];
+    }
+    return _managedObjectContext;
+}
 
 @end
