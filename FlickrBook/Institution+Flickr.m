@@ -16,16 +16,20 @@
     AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Institution"];
     NSArray *serverUniques = [instArray valueForKey:@"nsid"];
+    
+//    Mapping between unique keys and dicts from server response
+    NSDictionary *serverDict = [NSDictionary dictionaryWithObjects:&instArray forKeys:&serverUniques count:[serverUniques count]];
+
     request.predicate = [NSPredicate predicateWithFormat:@"unique in %@", serverUniques];
     NSManagedObjectContext *context = delegate.store.managedObjectContext;
     NSError *error;
     NSArray *matches = [context executeFetchRequest:request error:&error];
     NSSet *uniqueSet = [matches valueForKey:@"unique"];
-    for (NSString *unique in serverUniques) {
-        if (![uniqueSet containsObject:unique]) {
-            self createInstitution
-        }
-    }
+//    for (NSString *unique in serverUniques) {
+//        if (![uniqueSet containsObject:unique]) {
+//            self createInstitution
+//        }
+//    }
     
 }
 
