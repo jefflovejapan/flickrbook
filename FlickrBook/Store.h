@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface Store : NSObject
-@property(strong, nonatomic)NSManagedObjectContext *managedObjectContext;
++(NSManagedObjectContext *) managedObjectContext;
 @end

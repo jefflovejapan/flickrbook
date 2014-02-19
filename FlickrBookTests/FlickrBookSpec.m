@@ -65,7 +65,7 @@ describe(@"Store", ^{
         _store = [[Store alloc]init];
     });
     it(@"should create a valid managedobjectcontext", ^{
-        expect(_store.managedObjectContext).toNot.beNil();
+        expect([Store managedObjectContext]).toNot.beNil();
     });
 });
 

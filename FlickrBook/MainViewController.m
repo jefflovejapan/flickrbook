@@ -10,6 +10,7 @@
 #import "FlickrJSResponseSerializer.h"
 #import "Institution+Flickr.h"
 #import "InstitutionsTVDS.h"
+#import "Store.h"
 #import <AFURLRequestSerialization.h>
 #import <AFHTTPSessionManager.h>
 
@@ -36,17 +37,12 @@
     [manager GET:UrlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         NSDictionary *responseDict = responseObject;
         NSArray *instArray = [[NSArray alloc]initWithArray:responseDict[@"institutions"][@"institution"]];
-        NSLog(@"instArray: %@", instArray);
-        [Institution loadInstitutionsFromFlickrArray:instArray];
+        [Institution loadInstitutionsFromFlickrArray:instArray intoManagedObjectContext:[Store managedObjectContext]];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"Derp, failure");
     }];
  }
- 
 
--(void)writeDerpWithString:(NSString *)barf{
-    NSLog(@"barf: %@", barf);
-}
 
 
 -(void)viewWillAppear:(BOOL)animated{

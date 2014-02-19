@@ -13,13 +13,15 @@
 
 @implementation Store
 
--(NSManagedObjectContext *)managedObjectContext{
-    if (!_managedObjectContext) {
++(NSManagedObjectContext *)managedObjectContext{
+    static id _managedObjectContext = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
         NSArray *paths = [[NSFileManager defaultManager]URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask];
         NSURL *documentsURL = [paths objectAtIndex:0];
         UIManagedDocument *doc = [[UIManagedDocument alloc]initWithFileURL:[documentsURL URLByAppendingPathComponent:@"FlickrDatabase"]];
         _managedObjectContext = [doc managedObjectContext];
-    }
+    });
     return _managedObjectContext;
 }
 

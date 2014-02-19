@@ -10,6 +10,7 @@
 
 @interface Institution (Flickr)
 
-+(void)loadInstitutionsFromFlickrArray:(NSArray *)instArray;
++(void)loadInstitutionsFromFlickrArray:(NSArray *)instArray
+              intoManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end
