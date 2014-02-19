@@ -25,4 +25,8 @@
     return _managedObjectContext;
 }
 
++(NSString *)flickrApiKey{
+    return @"575470904abb319eef55c42ba6e0d644";
+}
+
 @end

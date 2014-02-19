@@ -28,13 +28,14 @@ describe(@"MainViewController", ^{
     it(@"s tableview's datasource should be class FRCDataSource", ^{
         expect(_mvc.tableView.dataSource.class).to.equal(InstitutionsTVDS.class);
     });
+    
+    it(@"should have a tableview datasource that returns valid cells", ^{
+        id tvds = _mvc.tableView.dataSource;
+        expect([tvds cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]]);
+    });
 
     it(@"should be in a navigation controller", ^{
         expect(_mvc.navigationController).toNot.beNil();
-    });
-    
-    it(@"should have a Flickr API key", ^{
-        expect(_mvc.flickrApiKey).toNot.beNil();
     });
     
     it(@"should have a toolbar that isn't hidden", ^{
@@ -66,6 +67,20 @@ describe(@"Store", ^{
     });
     it(@"should create a valid managedobjectcontext", ^{
         expect([Store managedObjectContext]).toNot.beNil();
+    });
+    
+    it(@"should have a Flickr API key", ^{
+        expect([Store flickrApiKey]).toNot.beNil();
+    });
+});
+
+describe(@"Institutions table view data source", ^{
+    __block InstitutionsTVDS *_tvds;
+    beforeAll(^{
+        _tvds = [[InstitutionsTVDS alloc]init];
+    });
+    it(@"should fetch results", ^{
+        expect(_tvds.fetchedResultsController.fetchedObjects).toNot.beNil();
     });
 });
 

@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 @interface InstitutionsTVDS : NSObject <UITableViewDataSource>
 @property(strong, nonatomic)UITableView *tableView;
-@property(strong, nonatomic)NSManagedObjectContext *context;
+@property(strong, nonatomic)NSFetchedResultsController *fetchedResultsController;
 -(id)initWithTableView:(UITableView *)tableView;
 
 @end

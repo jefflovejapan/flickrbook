@@ -12,5 +12,4 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *pingFlickrItem;
-@property(strong, nonatomic)NSString *flickrApiKey;
 @end

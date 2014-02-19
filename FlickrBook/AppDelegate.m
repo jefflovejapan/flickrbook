@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Institution+Flickr.h"
 
 
 @interface AppDelegate ()
@@ -19,14 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self startFlickrFetch];
     // Override point for customization after application launch.
     return YES;
-}
-
-- (void)startFlickrFetch
-{
-    NSLog(@"starting flickrfetch");
 }
 
 -(Store *)store{

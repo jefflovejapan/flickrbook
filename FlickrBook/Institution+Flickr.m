@@ -26,7 +26,7 @@
     NSArray *matches = [context executeFetchRequest:request error:&error];
     
 
-//  So now I've got everything that's in the db. What I want to do is find everything that's in serverUniques that *isn't* in the db and add it.
+//  So now I've got everything that's in the db. What I want to do is find everything that's in serverUniques that isn't in the db and add it.
     
     for (NSString *unique in serverUniques) {
         NSArray *someArray = [matches filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"unique = %@", unique]];
@@ -44,7 +44,6 @@
     Institution *inst = nil;
     inst = [NSEntityDescription insertNewObjectForEntityForName:@"Institution"
                                          inManagedObjectContext:context];
-    
     [inst setValue:flickrDict[@"name"][@"_content"] forKey:@"name"];
     NSLog(@"urls: %@", flickrDict[@"urls"][@"url"]);
     for (NSDictionary *url in flickrDict[@"urls"][@"url"]) {

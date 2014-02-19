@@ -7,27 +7,48 @@
 //
 
 #import "InstitutionsTVDS.h"
-#import "Institution.h"
-#import <CoreData/CoreData.h>
+#import "Institution+Flickr.h"
+#import "Store.h"
+#import "FlickrJSResponseSerializer.h"
+#import <AFURLRequestSerialization.h>
+#import <AFHTTPSessionManager.h>
 
 
-@interface InstitutionsTVDS () <UITableViewDataSource, UITableViewDelegate>
-@property (strong, nonatomic)NSFetchedResultsController *fetchedResultsController;
+@interface InstitutionsTVDS () <UITableViewDataSource, UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
 @end
 
 @implementation InstitutionsTVDS
+
 -(id)initWithTableView:(UITableView *)tableView{
     self = [super init];
     if (self) {
         self.tableView = tableView;
         self.tableView.dataSource = self;
     }
+    [self flickrFetch];
     return self;
 }
 
+-(void)flickrFetch{
+    FlickrJSResponseSerializer *respSrlzr = [FlickrJSResponseSerializer serializer];
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    manager.responseSerializer = respSrlzr;
+
+    NSString *UrlString = @"http://api.flickr.com/services/rest/";
+    NSDictionary *params = @{@"method": @"flickr.commons.getInstitutions", @"api_key": [Store flickrApiKey], @"format": @"json"};
+    [manager GET:UrlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSDictionary *responseDict = responseObject;
+        NSArray *instArray = [[NSArray alloc]initWithArray:responseDict[@"institutions"][@"institution"]];
+        [Institution loadInstitutionsFromFlickrArray:instArray intoManagedObjectContext:[Store managedObjectContext]];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"Derp, failure");
+    }];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    NSLog(@"fetchedObjects: %d", [self.fetchedResultsController.fetchedObjects count]);
+    return [self.fetchedResultsController.fetchedObjects count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -38,15 +59,38 @@
     return cell;
 }
 
-- (void) setContext:(NSManagedObjectContext *) context {
-    _context = context;
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Institution"];
-    request.predicate = nil;
-    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name"
-                                                              ascending:YES
-                                                               selector:@selector(localizedStandardCompare:)]];
-    self.fetchedResultsController = [[NSFetchedResultsController alloc]initWithFetchRequest:request managedObjectContext:context sectionNameKeyPath:nil cacheName:nil];
-    
+-(NSFetchedResultsController *)fetchedResultsController{
+    if (!_fetchedResultsController) {
+        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Institution"];
+        request.predicate = nil;
+        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"name"
+                                                                  ascending:YES
+                                                                   selector:@selector(localizedStandardCompare:)]];
+        _fetchedResultsController = [[NSFetchedResultsController alloc]
+                                                                 initWithFetchRequest:request
+                                                                 managedObjectContext:[Store managedObjectContext]
+                                                                 sectionNameKeyPath:nil
+                                                                 cacheName:nil];
+        NSError *error;
+        [_fetchedResultsController performFetch:&error];
+    }
+    return _fetchedResultsController;
+}
+
+
+#pragma NSFetchedResultsControllerDelegate
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath{
+    if (type == NSFetchedResultsChangeUpdate) {
+        [self.tableView reloadRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    } else {
+//        TODO -- finger grain control
+        [self.tableView reloadData];
+    }
+}
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller{
+    [self.tableView beginUpdates];
 }
 
 

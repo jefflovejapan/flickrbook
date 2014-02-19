@@ -10,4 +10,5 @@
 
 @interface Store : NSObject
 +(NSManagedObjectContext *) managedObjectContext;
++(NSString *) flickrApiKey;
 @end
